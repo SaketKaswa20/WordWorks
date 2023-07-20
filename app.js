@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const lowerButton = document.getElementById("lowerButton");
   const capitalizeButton = document.getElementById("capitalizeButton");
   const removeExtraSpacesButton = document.getElementById("removeExtraSpacesButton");
+  const clearButton = document.getElementById("clearButton");
   const wordCount = document.getElementById("wordCount");
 
   countButton.addEventListener("click", () => {
@@ -29,5 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
   removeExtraSpacesButton.addEventListener("click", () => {
     const text = inputText.value;
     inputText.value = text.replace(/\s+/g, " ").trim();
+  });
+
+  clearButton.addEventListener("click", () => {
+    inputText.value = "";
+    wordCount.textContent = "";
   });
 });
