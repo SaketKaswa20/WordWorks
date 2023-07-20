@@ -26,6 +26,3 @@ The application is designed using Tailwind CSS in dark mode.
 
 Saket Kaswa
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
